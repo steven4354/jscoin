@@ -16,3 +16,6 @@ console.log("valid? =>", jscoin.isChainValid())
 //change the block even a little and the blockchain isn't valid anymore
 jscoin.chain[1].data.amount = 999999999999 //...making more cash...
 console.log("valid? =>", jscoin.isChainValid())
+
+//however there is still the issue of being able to create blocks too easily
+//AKA spamming
