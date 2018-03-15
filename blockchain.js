@@ -1,4 +1,6 @@
-var Block = require("./require")
+"use strict"
+
+var Block = require("./block")
 
 module.exports = class Blockchain{
     constructor() {

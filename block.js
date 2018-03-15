@@ -1,7 +1,11 @@
+"use strict"
+
 const SHA256 = require("crypto-js/sha256");
 
 module.exports = class Block {
-    constructor(index, timestamp, data, previousHash = '') {
+    constructor(index, timestamp, data, previousHash) {
+        previousHash = typeof previousHash  !== 'undefined' ? previousHash : ''
+        
         this.index = index;
         this.previousHash = previousHash;
         this.timestamp = timestamp;
